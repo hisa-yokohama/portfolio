@@ -84,6 +84,9 @@
   .card:hover{transform:translateY(-4px);box-shadow:var(--shadow-sm)}
   .card h3{font-size:18px;font-weight:700;color:var(--text);margin-bottom:12px}
   .card p{color:var(--text-2);font-size:15px}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .tags span{background:var(--pink-soft);color:var(--rose);border-radius:50px;
+    padding:5px 14px;font-size:12px;font-weight:600;letter-spacing:.03em}
 
   /* ---- filters ---- */
   .filters{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:40px}
@@ -152,6 +155,7 @@
       <li><a href="#works">Works</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="https://github.com/hisa-yokohama" target="_blank" rel="noopener">GitHub</a></li>
     </ul>
   </div>
 </nav>
@@ -162,6 +166,7 @@
     <h1>AIと、ていねいに作る。</h1>
     <p class="lead">こんにちは、ひさです。Claude Code を相棒に、ゲームやWebサイトをAIと一緒に開発しています。これまでの成果物をまとめました。</p>
     <a href="#works" class="btn btn-primary">作品を見る</a>
+    <a href="https://github.com/hisa-yokohama" target="_blank" rel="noopener" class="btn btn-secondary" style="margin-left:12px">GitHub</a>
   </div>
 </header>
 
@@ -175,7 +180,11 @@
     <div class="about-grid">
       <div class="card reveal">
         <h3>Who</h3>
-        <p>ひさ。「AIを学びたい」を入口に、実際に手を動かしてモノを作りながら開発を覚えています。好きなものはパソコン・きりん・お金・コーヒー。</p>
+        <p>ひさ。「AIを学びたい」を入口に、実際に手を動かしてモノを作りながら開発を覚えています。</p>
+        <div class="tags">
+          <span>パソコン</span><span>きりん</span><span>お金</span><span>コーヒー</span>
+        </div>
+        <p style="margin-top:14px;font-size:14px">学びたいこと：<b style="color:var(--rose)">AI</b></p>
       </div>
       <div class="card reveal">
         <h3>How</h3>
@@ -281,7 +290,7 @@
   </div>
 </section>
 
-<footer>© 2026 ひさ ｜ Built with Claude Code</footer>
+<footer>© 2026 ひさ ｜ <a href="https://github.com/hisa-yokohama" target="_blank" rel="noopener" style="color:var(--rose)">GitHub</a> ｜ Built with Claude Code</footer>
 
 <div class="lb" id="lb">
   <span class="close" id="lbClose">×</span>
